@@ -1,0 +1,109 @@
+/* Custom Tailwind CSS Configuration & Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --pastel-pink: #fadbe0;
+    --pastel-pink-light: #fdf2f4;
+    --pastel-blue: #dbeafe;
+    --pastel-green: #dcfce7;
+    --pastel-yellow: #fef08a;
+    --pastel-purple: #f3e8ff;
+    --text-dark: #4b5563;
+    --text-muted: #6b7280;
+}
+
+/* Efek transisi halus dan styling khusus */
+html { 
+    scroll-behavior: smooth; 
+}
+
+body { 
+    background-color: #fdf2f4;
+    color: #4b5563;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Selection color */
+::selection {
+    background-color: var(--pastel-pink);
+    color: var(--text-dark);
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--pastel-pink);
+}
+
+nav a:hover {
+    color: var(--text-dark);
+    transition: color 0.2s ease;
+}
+
+/* Efek kartu timbul saat di-hover */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #f472b6;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f43f99;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--text-dark);
+    border: 1px solid #fce7f3;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    transition: border-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    border-color: #fbcfe8;
+}
+
+/* Image Hover Scale */
+.img-hover {
+    transition: transform 0.5s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Text */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

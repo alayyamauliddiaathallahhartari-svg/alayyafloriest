@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Alayya Mauliddia Athalla Hartari</title>
+    <!-- Memuat Tailwind CSS untuk styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan font Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Konfigurasi warna kustom Tailwind dan font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Palet warna pastel yang kalem dan didominasi pink muda
+                        'pastel-pink': '#fadbe0', // Pink muda utama
+                        'pastel-pink-light': '#fdf2f4',
+                        'pastel-blue': '#dbeafe',   // Biru pastel lembut
+                        'pastel-green': '#dcfce7',  // Hijau pastel lembut
+                        'pastel-yellow': '#fef08a', // Kuning pastel lembut
+                        'pastel-purple': '#f3e8ff', // Ungu pastel lembut
+                        'text-dark': '#4b5563',     // Abu-abu tua untuk teks utama
+                        'text-muted': '#6b7280',    // Abu-abu yang lebih redup
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'], // Font elegan untuk judul
+                    }
+                }
+            }
+        }
+    </script>
+  
+</head>
+
+<body class="antialiased min-h-screen selection:bg-pastel-pink selection:text-text-dark">
+
+    <!-- Navigasi Utama -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo / Nama Singkat -->
+                    <a href="#" class="font-serif text-2xl font-semibold text-text-dark tracking-wide">
+                        Alayya<span class="text-pink-400">.</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <!-- Tautan Navigasi -->
+                    <a href="#about" class="text-text-muted hover:text-text-dark transition-colors duration-200 text-sm font-medium">Tentang Saya</a>
+                    <a href="#florist" class="text-text-muted hover:text-text-dark transition-colors duration-200 text-sm font-medium">Toko Bunga</a>
+                    <a href="#cafe" class="text-text-muted hover:text-text-dark transition-colors duration-200 text-sm font-medium">Cafe Lucu</a>
+                    <a href="#achievements" class="text-text-muted hover:text-text-dark transition-colors duration-200 text-sm font-medium">Pencapaian</a>
+                </div>
+                <!-- Tombol menu mobile (icon) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-text-dark hover:text-pink-500 focus:outline-none">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero / Beranda -->
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-gradient-to-b from-pastel-pink-light to-white relative overflow-hidden">
+        <!-- Elemen dekorasi latar belakang abstrak berwarna pastel -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-pastel-yellow opacity-40 blur-3xl mix-blend-multiply"></div>
+        <div class="absolute top-40 left-0 -ml-20 w-80 h-80 rounded-full bg-pastel-purple opacity-40 blur-3xl mix-blend-multiply"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <!-- Nama Utama -->
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold text-text-dark mb-4 leading-tight">
+                    ALAYYA MAULIDDIA<br>ATHALLA HARTARI
+                </h1>
+                <!-- Profesi / Deskripsi Singkat -->
+                <p class="mt-4 text-xl sm:text-2xl text-text-muted font-light max-w-3xl mx-auto mb-8">
+                    Pemilik Toko Bunga Impor & <br class="sm:hidden">Cafe Kue yang Menawan
+                </p>
+                <div class="flex justify-center gap-4">
+                    <!-- Tombol Aksi -->
+                    <a href="#florist" class="px-8 py-3 rounded-full bg-pink-300 hover:bg-pink-400 text-white font-medium transition-colors shadow-sm">Karya Bunga</a>
+                    <a href="#cafe" class="px-8 py-3 rounded-full bg-white border border-pink-200 hover:border-pink-300 text-text-dark font-medium transition-colors shadow-sm">Kunjungi Cafe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-serif font-semibold text-text-dark section-title">Tentang Saya</h2>
+                <div class="w-24 h-1 bg-pastel-pink mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Foto Profil (Placeholder) -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full border-8 border-pastel-pink overflow-hidden shadow-lg">
+                        <img src="profil.jpg" alt="Foto Alayya" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <!-- Teks Deskripsi -->
+                <div class="w-full md:w-1/2 space-y-6">
+                    <h3 class="text-2xl font-serif text-text-dark">Halo, saya Alayya!</h3>
+                    <p class="text-lg text-text-muted leading-relaxed">
+                        Saya adalah seorang <span class="text-pink-400 font-medium">florist bersemangat</span> dan pecinta kuliner manis. Dunia saya dipenuhi dengan warna-warni pastel yang lembut, wangi bunga segar, dan aroma kue yang baru matang.
+                    </p>
+                    <p class="text-lg text-text-muted leading-relaxed">
+                        Dengan pengalaman bertahun-tahun merangkai bunga dan menciptakan resep kue yang lucu, saya mendedikasikan diri untuk membawa kebahagiaan kecil melalui setiap karya yang saya buat, baik itu buket bunga impor yang elegan maupun kue-kue menggemaskan di cafe saya.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Toko Bunga Impor -->
+    <section id="florist" class="py-20 bg-pastel-pink-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-pink-400 font-medium tracking-wider uppercase text-sm">Kreasi & Keindahan</span>
+                <h2 class="text-3xl font-serif font-semibold text-text-dark mt-2 section-title">Toko Bunga Impor</h2>
+                <div class="w-24 h-1 bg-white mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-text-muted max-w-2xl mx-auto">Menyediakan rangkaian bunga premium dari berbagai belahan dunia, dirangkai dengan penuh cinta untuk momen spesial Anda.</p>
+            </div>
+
+            <!-- Grid Galeri Bunga -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item Galeri 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+                    <div class="h-64 overflow-hidden relative group">
+                        <img src= "peony.jpg" alt="Buket Peony" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i data-lucide="heart" class="text-white h-8 w-8"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-serif font-medium text-text-dark mb-2">Buket Peony Pastel</h4>
+                        <p class="text-sm text-text-muted">Koleksi peony impor dengan sentuhan warna ungu lembut yang romantis.</p>
+                    </div>
+                </div>
+
+                <!-- Item Galeri 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+                    <div class="h-64 overflow-hidden relative group">
+                        <img src= "tulip.jpg" alt="Tulip Belanda" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i data-lucide="heart" class="text-white h-8 w-8"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-serif font-medium text-text-dark mb-2">Tulip Belanda Elegansi</h4>
+                        <p class="text-sm text-text-muted">Rangkaian tulip putih dan biru muda langsung dari perkebunan Belanda.</p>
+                    </div>
+                </div>
+
+                <!-- Item Galeri 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden card-hover shadow-sm">
+                    <div class="h-64 overflow-hidden relative group">
+                        <img src= "mawar.jpg" alt="Mawar Premium" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i data-lucide="heart" class="text-white h-8 w-8"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-serif font-medium text-text-dark mb-2">Sunrise Rose Collection</h4>
+                        <p class="text-sm text-text-muted">Mawar kuning persik premium dengan paduan foliage eksotis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pencapaian Florist -->
+    <section id="achievements" class="py-20 bg-white relative overflow-hidden">
+        <!-- Dekorasi latar -->
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-pastel-green opacity-30 rounded-full blur-3xl -ml-20 -mb-20"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-pastel-pink-light rounded-3xl p-8 sm:p-12 border border-pink-100 shadow-sm">
+                <div class="text-center mb-12">
+                    <i data-lucide="award" class="mx-auto h-12 w-12 text-pink-400 mb-4"></i>
+                    <h2 class="text-3xl font-serif font-semibold text-text-dark section-title">Jejak Karya</h2>
+                    <p class="mt-4 text-text-muted">Pengakuan atas dedikasi dalam seni merangkai bunga.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Kartu Pencapaian 1 -->
+                    <div class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-pastel-blue rounded-full flex items-center justify-center">
+                            <i data-lucide="star" class="text-blue-500 h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-text-dark">"Best Floral Design 2024"</h4>
+                            <p class="text-sm text-text-muted mt-1">Penghargaan tingkat nasional untuk kategori inovasi desain buket pernikahan eksklusif dengan bunga langka.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Pencapaian 2 -->
+                    <div class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-sm">
+                        <div class="flex-shrink-0 w-12 h-12 bg-pastel-yellow rounded-full flex items-center justify-center">
+                            <i data-lucide="users" class="text-yellow-600 h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium text-text-dark">Official Florist Gala Dinner</h4>
+                            <p class="text-sm text-text-muted mt-1">Dipercaya merangkai lebih dari 500 buket bunga meja untuk acara kenegaraan tahun 2025.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Cafe Kue Lucu -->
+    <section id="cafe" class="py-20 bg-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-white font-medium tracking-wider uppercase text-sm bg-pink-400 px-3 py-1 rounded-full">Manis & Menggemaskan</span>
+                <h2 class="text-3xl font-serif font-semibold text-text-dark mt-6 section-title">Cafe Kue Lucu</h2>
+                <div class="w-24 h-1 bg-white mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-text-dark/80 max-w-2xl mx-auto">Tempat di mana rasa manis bertemu dengan desain yang tak tertahankan. Setiap kue adalah karya seni kecil yang siap memanjakan lidah Anda.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item Kue 1 -->
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-3xl text-center card-hover border border-white">
+                    <img src="macaroncake.jpg" alt="Kue Lucu" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h4 class="font-serif font-medium text-lg text-text-dark">Pastel Macarons</h4>
+                    <p class="text-sm text-text-muted mt-1">Rasa vanilla & raspberry</p>
+                </div>
+
+                <!-- Item Kue 2 -->
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-3xl text-center card-hover border border-white">
+                    <img src="machabear.jpg" alt="Kue Lucu" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h4 class="font-serif font-medium text-lg text-text-dark">Matcha Bear Cake</h4>
+                    <p class="text-sm text-text-muted mt-1">Bentuk beruang menggemaskan</p>
+                </div>
+
+                <!-- Item Kue 3 -->
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-3xl text-center card-hover border border-white">
+                    <img src="cupcake.jpg" alt="Kue Lucu" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h4 class="font-serif font-medium text-lg text-text-dark">Cloud Cupcakes</h4>
+                    <p class="text-sm text-text-muted mt-1">Frosting selembut awan</p>
+                </div>
+
+                <!-- Item Kue 4 -->
+                <div class="bg-white/80 backdrop-blur-sm p-4 rounded-3xl text-center card-hover border border-white">
+                    <img src="lemontart.jpg" alt="Kue Lucu" class="w-full h-48 object-cover rounded-2xl mb-4">
+                    <h4 class="font-serif font-medium text-lg text-text-dark">Sunny Lemon Tart</h4>
+                    <p class="text-sm text-text-muted mt-1">Segar dan manis ceria</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-pastel-pink">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-serif font-semibold text-text-dark mb-6">Alayya Mauliddia Athalla Hartari</h2>
+            
+            <!-- Sosial Media Links -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-text-muted hover:text-pink-400 transition-colors">
+                    <i data-lucide="instagram" class="h-6 w-6"></i>
+                </a>
+                <a href="#" class="text-text-muted hover:text-pink-400 transition-colors">
+                    <i data-lucide="facebook" class="h-6 w-6"></i>
+                </a>
+                <a href="#" class="text-text-muted hover:text-pink-400 transition-colors">
+                    <i data-lucide="mail" class="h-6 w-6"></i>
+                </a>
+            </div>
+            
+            <p class="text-text-muted text-sm">
+                &copy; 2026 Alayya Portfolio. Didesain dengan warna-warni pastel.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script untuk merender icon Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
